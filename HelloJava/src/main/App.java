@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -7,6 +8,10 @@ import java.util.Random;
 // import javax.swing.JOptionPane;
 
 public class App {
+  /**
+   * @param args
+   * @throws Exception
+   */
   public static void main(String[] args) throws Exception {
 
     byte a = 1; // Initialization
@@ -135,6 +140,79 @@ public class App {
     System.out.println(stringMethods.toUpperCase());
 
     // Wrapper classes
+    // Boolean
+    // Integer
+    // Double
+    // Float
+    // String
 
+    // ArrayList: Only store reference datatypes. NB: Primitive DTs are store
+    // through wrapper classes
+    ArrayList<String> food = new ArrayList<String>();
+    food.add("Pizza");
+    food.add("Hamburger");
+    food.add("Hotdog");
+    System.out.println(food.size());
+    System.out.println(food);
+
+    // Iterate through indexes
+    for (int valueAt = 0; valueAt < food.size(); valueAt++) {
+      System.out.println(food.get(valueAt));
+    }
+
+    // Some methods
+    food.set(2, "Apple pie");
+    // remove
+    // clear
+
+    // For each
+    for (String foods : food) {
+      System.out.println(foods);
+    }
+
+    ArrayList<String> vegetableList = new ArrayList<String>();
+    vegetableList.add("Lettuce");
+    vegetableList.add("Cucumber");
+    vegetableList.add("Spinach");
+    System.out.println(vegetableList);
+
+    ArrayList<String> diaryProducts = new ArrayList<String>();
+    diaryProducts.add("Milk");
+    diaryProducts.add("Eggs");
+    diaryProducts.add("Meat");
+    System.out.println(diaryProducts);
+
+    // 2d ArrayList
+    ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+    groceryList.add(vegetableList);
+    groceryList.add(diaryProducts);
+    groceryList.add(food);
+    System.out.println(groceryList);
+
+    // Get elements in 2d arraylist
+    System.out.println(groceryList.get(0).get(0));
+    System.out.println(groceryList.get(2).get(0));
+
+    // Methods
+    // Pass arguments to method parameters if any
+    // Assign return value to sayHello variable
+    String helloUser = hello("William");
+    System.out.println(helloUser);
+
+    // Printf
+    // Format specifiers,%s,%d,%b,%c,%f(float or double),15(width, space)
+    System.out.printf("%,15.2f\n", 10_000.000);
+
+    // Final keyword
+    final double PI = 3.14d;
+    System.out.printf("Variables declared final, like PI: %.2f, cannot be changed\n", PI);
+  }
+
+  // Methods
+  // Return types, void(returns no value), String(returns string), ...
+  // Return value is String
+  // Check out overloaded methods
+  static String hello(String name) {
+    return "Hello " + name; // return null as default
   }
 }
