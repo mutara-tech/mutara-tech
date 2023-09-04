@@ -1,5 +1,6 @@
 package main;
 
+import java.util.Arrays;
 import java.util.Random;
 
 // import java.util.Scanner;
@@ -93,5 +94,47 @@ public class App {
         System.out.println("There are only two genders");
       }
     }
+
+    String molly = "Molly";
+    String dave = "Dave";
+    boolean condition1 = molly.length() > 10 && dave.length() > 10;
+    System.out.println(condition1);
+    boolean condition2 = molly.length() > 10 || dave.length() > 10;
+    System.out.println(condition2);
+    boolean condition3 = !(molly.length() > 10 && dave.length() > 10);
+    System.out.println(condition3);
+
+    int bro = 0;
+    while (bro < 3) {
+      System.out.println("Bro");
+      bro++;
+    }
+
+    for (int start = 0; start < 3;) {
+      System.out.println("Dude");
+      start++; // Could be placed within the parenthesis as well
+      // Make sure to check out nested loops as well
+    }
+
+    int[] array = new int[3]; // Same as int[] array = {1, 2, 3};
+    array[0] = 0; // Count starts at index 0
+    array[0] = 1; // Overriding the first element from 0 to 1
+    array[1] = 2;
+    array[2] = 3;
+    System.out.println(Arrays.toString(array));
+
+    String[][] fruits = { { "Apple", "Mango", "Pineapple" }, { "Peach", "Jackfruit", "Watermelon" } };
+    System.out.println(Arrays.deepToString(fruits));
+    fruits[1][1] = "Grapes";
+    System.out.println(Arrays.deepToString(fruits));
+
+    // Some string methods
+    String stringMethods = "String  methods";
+    System.out.println(Arrays.toString(stringMethods.split("")));
+    System.out.println(stringMethods.toLowerCase());
+    System.out.println(stringMethods.toUpperCase());
+
+    // Wrapper classes
+
   }
 }
