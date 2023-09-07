@@ -14,4 +14,9 @@ public class Car {
     public String brake() {
         return "Brakes applied successfully!";
     }
+
+    @Override
+    public String toString() {
+        return make;
+    }
 }
