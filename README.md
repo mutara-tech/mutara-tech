@@ -1,7 +1,7 @@
 # Description
 
 - 👋 Hi, I’m @mutara-tech
-- 👀 I’m interested in artificial Intelligence
-- 🌱 I’m currently learning python...
+- 👀 I’m interested in data science and machine learning
+- 🌱 I’m currently learning Python and R programming languages...
 - 💞️ I’m looking to collaborate on multiple ai projects
-- 📫 How to reach me Phone: +1(508)-262-0701, Email: <mutarawilliam@outlook.com>
+- 📫 How to reach me Phone: +1(508)-262-0701, Email: <williammutara@icloud.com>
